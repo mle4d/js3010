@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Patrick+Hand&display=swap');
 html {
   background-image: url(assets/catbg.png);
   background-position: top right;
@@ -5,4 +6,12 @@ html {
   background-size: 85vw;
   background-repeat: no-repeat;
   overflow: hidden;
+  font-family: 'Patrick Hand', cursive;
+}
+header {
+  font-family: 'Amatic SC', cursive;
+  color: #ffffff;
+  position: left;
+  font-size: 7em;
+  margin-top: -20px;
 }
