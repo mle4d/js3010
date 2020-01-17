@@ -1,0 +1,8 @@
+html {
+  background-image: url(assets/catbg.png);
+  background-position: top right;
+  background-color: #bcf7fa;
+  background-size: 85vw;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
