@@ -3,9 +3,9 @@ html {
   background-image: url(assets/catbg.png);
   background-position: right top;
   background-color: #bcf7fa;
-  background-size: 80vw;
+  background-size: 85vw;
   background-repeat: no-repeat;
-  /* overflow: hidden; */
+  overflow: hidden;
   font-family: 'Patrick Hand', cursive;
 }
 body {
@@ -27,11 +27,10 @@ h2 {
 .test {
   display: flex;
   flex-direction: row;
-  margin-top: -20px;
+  margin-top: -35px;
 }
 .test1 {
   max-width: 300px;
-  margin: 0px;
   background:  #bcf7fa;
   border-radius: 5px;
   border-top-right-radius: 0px;
@@ -43,7 +42,6 @@ h2 {
 }
 .test2 {
   max-width: 300px;
-  margin: 0px;
   background:  #bcf7fa;
   border-radius: 5px;
   border-top-left-radius: 0px;
