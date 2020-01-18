@@ -82,7 +82,15 @@ p {
   color: #6d52dae0;
   border-left: 1px solid #ff66c4;
 }
-results {
+
+.results {
   margin: 40px;
-  padding: 40px;
+  font-family: 'Patrick Hand', cursive;
+  color: #ff66c4;
+  font-size: 3em;
+}
+.num {
+  font-family: 'Patrick Hand', cursive;
+  color: #ff66c4;
+  font-size: 1em;
 }
