@@ -12,37 +12,37 @@
   <div id="test">
   <div class="test1">
       <div class="item">
-        <input type="checkbox" value="19.5">
+        <input type="checkbox" value="19">
         <p>Sleep is your<br>main priority</p>
       </div>
       <div class="item">
-        <input type="checkbox" value="14.6">
+        <input type="checkbox" value="15">
         <p>Soft & cute but<br>will cut you</p>
       </div>
       <div class="item">
-        <input type="checkbox" value="8.7">
+        <input type="checkbox" value="8">
         <p>You love<br>small animals</p>
       </div>
       <div class="item">
-        <input type="checkbox" value="13.1">
+        <input type="checkbox" value="14">
         <p>Treats are your<br>favorite food group</p>
       </div>
     </div>
       <div class="test2">
       <div class="item">
-        <input type="checkbox" value="13.9">
+        <input type="checkbox" value="14">
         <p>Affectionate only<br>on your terms</p>
       </div>
       <div class="item">
-        <input type="checkbox" value="8.3">
+        <input type="checkbox" value="8">
         <p>Thinks most humans<br>are awful</p>
       </div>
       <div class="item">
-        <input type="checkbox" value="12.5">
+        <input type="checkbox" value="12">
         <p>Happiness is<br>a full bowl</p>
       </div>
       <div class="item">
-        <input type="checkbox" value="9.4">
+        <input type="checkbox" value="10">
         <p>love language<br>is gift-giving</p>
       </div>
     </div>
@@ -102,13 +102,13 @@ function updateTotal(e) {
 }
     
 function formatDecimal(val, n) {
-    n = n || 1;
+    n = n || 0;
     var str = "" + Math.round ( parseFloat(val) * Math.pow(10, n) );
     while (str.length <= n) {
         str = "" + str;
     }
     var pt = str.length - n;
-    return str.slice(0,pt) + "." + str.slice(pt);
+    return str.slice(0,pt) + str.slice(pt);
 }
 
 attachCheckboxHandlers();
