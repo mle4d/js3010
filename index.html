@@ -8,44 +8,49 @@
 <body>
   <header>Are You Actually a Cat?</header>
   <h2>Take the Test Now!</h2>
-  <div class="test">
+  <form action="#" method="post">
+  <div id="test">
   <div class="test1">
       <div class="item">
-        <input type="checkbox">
+        <input type="checkbox" value="12.5">
         <p>Sleep is your<br>main priority</p>
       </div>
       <div class="item">
-        <input type="checkbox">
+        <input type="checkbox" value="12.5">
         <p>Soft & cute but<br>will cut you</p>
       </div>
       <div class="item">
-        <input type="checkbox">
+        <input type="checkbox" value="12.5">
         <p>You love<br>small animals</p>
       </div>
       <div class="item">
-        <input type="checkbox">
+        <input type="checkbox" value="12.5">
         <p>Treats are your<br>favorite food group</p>
       </div>
     </div>
       <div class="test2">
       <div class="item">
-        <input type="checkbox">
+        <input type="checkbox" value="12.5">
         <p>Affectionate only<br>on your terms</p>
       </div>
       <div class="item">
-        <input type="checkbox">
+        <input type="checkbox" value="12.5">
         <p>Thinks most humans<br>are awful</p>
       </div>
       <div class="item">
-        <input type="checkbox">
+        <input type="checkbox" value="12.5">
         <p>Happiness is<br>a full bowl</p>
       </div>
       <div class="item">
-        <input type="checkbox">
+        <input type="checkbox" value="12.5">
         <p>love language<br>is gift-giving</p>
       </div>
     </div>
+    <div class="results">
+        You are<input type="text" name="total" class="num" size="6" value="0" readonly="readonly" />% cat</label>
+        </div>
   </div>
+</form>
 <script>
   const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
 
@@ -69,6 +74,44 @@ function handleCheck(e) {
 }
 
 checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
+
+function attachCheckboxHandlers() {
+    
+    var el = document.getElementById('test');
+
+    var checks = el.getElementsByTagName('input');
+    
+    for (var i=0, len=checks.length; i<len; i++) {
+        if ( checks[i].type === 'checkbox' ) {
+            checks[i].onclick = updateTotal;
+        }
+    }
+}
+function updateTotal(e) {
+    var form = this.form;
+    
+    var val = parseFloat( form.elements['total'].value );
+    
+    if ( this.checked ) {
+        val += parseFloat(this.value);
+    } else {
+        val -= parseFloat(this.value);
+    }
+    
+    form.elements['total'].value = formatDecimal(val);
+}
+    
+function formatDecimal(val, n) {
+    n = n || 2;
+    var str = "" + Math.round ( parseFloat(val) * Math.pow(10, n) );
+    while (str.length <= n) {
+        str = "0" + str;
+    }
+    var pt = str.length - n;
+    return str.slice(0,pt) + "." + str.slice(pt);
+}
+
+attachCheckboxHandlers();
 </script>
 </body>
 </html>
