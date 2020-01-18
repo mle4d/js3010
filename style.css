@@ -23,7 +23,7 @@ h2 {
   font-size: 3em;
   margin-top: -10px;
 }
-.test {
+#test {
   display: flex;
   flex-direction: row;
   margin-top: -35px;
@@ -81,4 +81,8 @@ p {
   font-weight: 200;
   color: #6d52dae0;
   border-left: 1px solid #ff66c4;
+}
+results {
+  margin: 40px;
+  padding: 40px;
 }
