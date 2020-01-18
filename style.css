@@ -3,7 +3,7 @@ html {
   background-image: url(assets/catbg.png);
   background-position: right top;
   background-color: #bcf7fa;
-  background-size: 85vw;
+  background-size: 80vw;
   background-repeat: no-repeat;
   /* overflow: hidden; */
   font-family: 'Patrick Hand', cursive;
@@ -23,4 +23,49 @@ h2 {
   color: #ff66c4;
   font-size: 3em;
   margin-top: -10px;
+}
+.test {
+  display: flex;
+  flex-direction: row;
+  margin-top: -20px;
+}
+.inbox {
+  max-width: 300px;
+  margin: 4px;
+  background:  #bcf7fa;
+  border-radius: 5px;
+  box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+  border: solid 2px #ff66c4;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ff66c4;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+
+input:checked + p {
+  background:  #bcf7fa;
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  margin: 10px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  transition: background 0.2s;
+  flex: 1;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.5em;
+  font-weight: 200;
+  color: #6d52dae0;
+  border-left: 1px solid #D1E2FF;
 }
