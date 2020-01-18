@@ -87,7 +87,8 @@ p {
   margin: 40px;
   font-family: 'Patrick Hand', cursive;
   color: #ff66c4;
-  font-size: 3em;
+  font-size: 4em;
+  text-align: center;
 }
 .num {
   font-family: 'Patrick Hand', cursive;
@@ -95,6 +96,8 @@ p {
   font-size: 1em;
   background-color: #bcf7fa;
   border: solid transparent;
-  width: 60px;
-  text-align: center;
+  width: 80px;
+  text-align: right;
+  text-decoration-line: underline;
+  text-decoration-color: #6d52dae0;
 }
