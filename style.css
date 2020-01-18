@@ -64,7 +64,7 @@ h2 {
 
 input:checked + p {
   background:  #bcf7fa;
-  text-decoration: line-through;
+  
 }
 
 input[type="checkbox"] {
