@@ -5,7 +5,7 @@ html {
   background-color: #bcf7fa;
   background-size: 85vw;
   background-repeat: no-repeat;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: 'Patrick Hand', cursive;
 }
 body {
