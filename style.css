@@ -8,6 +8,12 @@ html {
   overflow: hidden;
   font-family: 'Patrick Hand', cursive;
 }
+@media only screen and (min-width: 200px) {
+  html {
+    background-position: 100% 100%;
+    background-size: 40vw;
+  }
+}
 body {
   margin: 20px;
 }
@@ -17,6 +23,16 @@ header {
   text-shadow: 6px 2px 0 rgba(0,0,0,0.1);
   font-size: 6em;
   margin-top: -35px;
+}
+@media only screen and (min-width: 200px) {
+  header {
+    font-family: 'Amatic SC', cursive;
+    color: #6d52dae0;
+    text-shadow: 6px 2px 0 rgba(0,0,0,0.1);
+    font-size: 4em;
+    text-align: center;
+    margin-top: -35px;
+  }
 }
 h2 {
   font-family: 'Patrick Hand', cursive;
