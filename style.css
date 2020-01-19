@@ -50,7 +50,7 @@ h2 {
 .test1 {
   max-width: 300px;
   background:  #bcf7fa;
-  border-radius: 5px;
+  border-radius: 10px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
@@ -62,7 +62,7 @@ h2 {
 .test2 {
   max-width: 300px;
   background:  #bcf7fa;
-  border-radius: 5px;
+  border-radius: 10px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
